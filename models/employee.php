@@ -32,6 +32,12 @@
       $sql->execute(array($name,$email));
     }
 
+    public static function delete($id){
+      $conexionBD=BD::createInstance();
+      $sql=$conexionBD->prepare("DELETE FROM empleados WHERE id=?");
+      $sql->execute(array($id));
+    }
+
   }
 
 ?>

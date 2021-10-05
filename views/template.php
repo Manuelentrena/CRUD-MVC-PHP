@@ -20,7 +20,7 @@
               <div class="nav navbar-nav">
                   <a class="nav-item nav-link active" href="#">CRUD PHP <span class="visually-hidden">(current)</span></a>
                   <a class="nav-item nav-link" href="#">Home</a>
-                  <a class="nav-item nav-link" href="#">Employees</a>
+                  <a class="nav-item nav-link" href="?controler=employees&action=initial">Employees</a>
               </div>
           </nav>
           <!-- PAGE -->

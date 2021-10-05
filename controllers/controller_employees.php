@@ -23,6 +23,12 @@ class ControllerEmployees{
   public function modify(){
     include_once("views/employees/modify.php");
   }
+
+  public function delete(){
+    $id = $_GET['id'];
+    Employee::delete($id);
+    $this->initial();
+  }
 }
 
 
