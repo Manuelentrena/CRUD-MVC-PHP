@@ -21,13 +21,15 @@ class ControllerEmployees{
   }
   
   public function modify(){
+    $id = $_GET['id'];
+    $employee = Employee::search($id);
     include_once("views/employees/modify.php");
   }
 
   public function delete(){
     $id = $_GET['id'];
     Employee::delete($id);
-    $this->initial();
+    header("Location:./?controler=employees&action=initial");
   }
 }
 

@@ -38,6 +38,14 @@
       $sql->execute(array($id));
     }
 
+    public static function search($id){
+      $conexionBD=BD::createInstance();
+      $sql=$conexionBD->prepare("SELECT * FROM empleados WHERE id=?");
+      $sql->execute(array($id));
+      $employee=$sql->fetch();
+      return new Employee($employee['id'],$employee['name'],$employee['email']);
+    }
+
   }
 
 ?>
