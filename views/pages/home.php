@@ -5,7 +5,7 @@
     <hr class="my-2">
     <p>Más Información</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">EJEMPLO BASICO</a>
+      <a class="btn btn-primary btn-lg" href="?controler=employees&action=initial" role="button">EJEMPLO BASICO</a>
     </p>
   </div>
 </div>

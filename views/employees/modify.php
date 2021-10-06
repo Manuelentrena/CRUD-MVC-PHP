@@ -9,7 +9,7 @@
       <div class="mb-3">
         <label for="id" class="form-label">Id:</label>
         <input type="text"
-          class="form-control" name="id" id="id" aria-describedby="helpId" value="<?php echo $employee->id ?>">
+          class="form-control" name="id" id="id" aria-describedby="helpId" value="<?php echo $employee->id ?>" disabled>
       </div>
       <!-- INPUT NAME -->
       <div class="mb-3">
