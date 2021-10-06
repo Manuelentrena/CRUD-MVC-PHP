@@ -23,11 +23,11 @@
               <div class="btn-group" role="group" aria-label="">
                 <a href="?controler=employees&action=modify&id=<?php echo $employee->id ?>" type="button" class="btn btn-info">Edit</a>
                 <!-- Button delete modal -->
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modelId">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modelId<?php echo $employee->id ?>">
                   Delete
                 </button>
                 <!-- MODAL DELETE -->
-                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal fade" id="modelId<?php echo $employee->id ?>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">

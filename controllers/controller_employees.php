@@ -36,7 +36,6 @@ class ControllerEmployees{
 
   public function delete(){
     $id = $_GET['id'];
-    /* include_once("views/employees/delete.php"); */
     Employee::delete($id);
     header("Location:./?controler=employees&action=initial");
   }
