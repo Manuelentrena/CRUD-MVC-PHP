@@ -46,6 +46,12 @@
       return new Employee($employee['id'],$employee['name'],$employee['email']);
     }
 
+    public static function edit($id,$name,$email){
+      $conexionBD=BD::createInstance();
+      $sql=$conexionBD->prepare("UPDATE empleados SET name=? , email=? WHERE id=?");
+      $sql->execute(array($name,$email,$id));
+    }
+
   }
 
 ?>

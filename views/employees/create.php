@@ -18,6 +18,7 @@
       </div>
       <!-- SUBMIT -->
       <button type="submit" class="btn btn-success" value="Add Employee">ADD NEW EMPLOYEE</button>
+      <a href="?controler=employees&action=initial" class="btn btn-info">Cancelar</a>
     </form>
   </div>
 </div>

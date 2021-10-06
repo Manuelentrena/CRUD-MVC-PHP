@@ -19,7 +19,7 @@
           <nav class="navbar navbar-expand navbar-light bg-light">
               <div class="nav navbar-nav">
                   <a class="nav-item nav-link active" href="#">CRUD PHP <span class="visually-hidden">(current)</span></a>
-                  <a class="nav-item nav-link" href="#">Home</a>
+                  <a class="nav-item nav-link" href="?controler=pages&action=home">Home</a>
                   <a class="nav-item nav-link" href="?controler=employees&action=initial">Employees</a>
               </div>
           </nav>

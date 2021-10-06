@@ -21,6 +21,14 @@ class ControllerEmployees{
   }
   
   public function modify(){
+    
+    if($_POST){
+      $id = $_POST['id'];
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      Employee::edit($id,$name,$email);
+      header("Location:./?controler=employees&action=initial");
+    }
     $id = $_GET['id'];
     $employee = Employee::search($id);
     include_once("views/employees/modify.php");
